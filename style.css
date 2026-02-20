@@ -1,64 +1,96 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Open Sans', sans-serif; color: #333; line-height: 1.6; background: #fff; }
+body { font-family: 'Open Sans', sans-serif; color: #333; line-height: 1.6; }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-header { background: #1E3A8A; color: white; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+header { background: white; padding: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 
 header .container { display: flex; justify-content: space-between; align-items: center; }
 
-.logo { font-family: 'Playfair Display', serif; font-size: 2rem; color: #D4AF37; }
+.logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #333; }
 
 nav ul { display: flex; list-style: none; }
 
-nav li { margin: 0 20px; }
+nav li { margin-left: 20px; color: #FF6600; font-weight: 600; cursor: pointer; }
 
-nav a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+.btn.orange { background: #FF6600; color: white; border: none; padding: 10px 20px; border-radius: 30px; cursor: pointer; }
 
-nav a:hover { color: #D4AF37; }
+.hero { height: 60vh; background: url('https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt720954ecfafb8b67/689d929fa21355a02e4fd07e/BCC-2024-EXPLORER-JODHPUR-THINGS-TO-DO-AT-NIGHT-HEADER_MOBILE.jpg?format=webp&auto=avif&quality=60&crop=16%3A9&width=1440') center/cover; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
 
-.dropdown-content { display: none; position: absolute; background: #1E3A8A; min-width: 160px; top: 100%; left: 0; box-shadow: 0 8px 16px rgba(0,0,0,0.3); }
+.hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
 
-.dropdown:hover .dropdown-content { display: block; }
+.hero-content { position: relative; z-index: 2; }
 
-.btn { padding: 12px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s; cursor: pointer; }
+.small-title { font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 10px; }
 
-.btn.gold { background: #D4AF37; color: white; }
+h1 { font-size: 3.5rem; margin-bottom: 20px; }
 
-.btn.gold:hover { background: #b8962e; transform: translateY(-2px); }
+.slogan { font-size: 1.2rem; margin-bottom: 30px; }
 
-.btn.outline { background: transparent; border: 2px solid #D4AF37; color: #D4AF37; }
+.hero-buttons .btn { margin: 0 10px; }
 
-.btn.outline:hover { background: #D4AF37; color: white; }
+.btn.white { background: white; color: #FF6600; }
 
-.hero {
-  height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1603262110263-fb6c1fd2c7cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
+.featured { padding: 80px 0; }
 
-.hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.55); }
+h2 { font-family: 'Playfair Display', serif; text-align: center; font-size: 2.5rem; margin-bottom: 20px; }
 
-.hero-content { position: relative; z-index: 2; max-width: 900px; }
+.subtitle { text-align: center; color: #666; margin-bottom: 50px; }
 
-h1 { font-family: 'Playfair Display', serif; font-size: 5rem; margin-bottom: 20px; color: #D4AF37; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 
-.card-img {
-  height: 280px;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
+.card { border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
 
-.card { transition: transform 0.4s; }
+.card.gradient { background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); color: white; }
 
-.card:hover { transform: translateY(-15px); }
+.tag { background: #FF6600; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; display: inline-block; margin-bottom: 15px; }
 
-/* Le reste du CSS (grid, dark section, etc.) reste le même que ma version précédente – ajoute-le si manquant */
+.card-img { height: 200px; background-size: cover; }
+
+.card-content { padding: 25px; }
+
+.meta { color: #666; font-weight: 600; }
+
+.duration { color: #FF6600; }
+
+.price { font-weight: bold; font-size: 1.2rem; margin: 15px 0; }
+
+.regions { padding: 80px 0; background: #f9f9f9; }
+
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+
+.region-card { border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+
+.all-circuits { padding: 80px 0; }
+
+.region-title { font-size: 1.5rem; color: #FF6600; margin-bottom: 30px; }
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+
+.dark-section { background: #001a33; color: white; padding: 80px 0; }
+
+.grid-4 .feature-card { background: rgba(255,255,255,0.1); border-radius: 15px; padding: 30px; text-align: center; }
+
+.icon { background: #FF6600; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5rem; }
+
+.cta-section { background: url('https://www.wtravelmagazine.com/wp-content/uploads/2018/12/23.28.1-The-Blue-City-and-Mehrangarh-Fort-by-Sean-Hsu.jpg') center/cover; position: relative; padding: 80px 0; text-align: center; color: white; }
+
+.cta-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+
+.cta-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+
+footer { background: #001a33; color: white; padding: 60px 0; }
+
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; }
+
+.footer-links h4 { color: #FF6600; margin-bottom: 15px; }
+
+.footer-links ul { list-style: none; }
+
+.footer-links li { margin-bottom: 10px; }
+
+.copyright { text-align: center; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
+
+@media (max-width: 768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } h1 { font-size: 2.5rem; } }
