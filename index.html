@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Singh Voyage - Voyages de Luxe en Inde</title>
-  <meta name="description" content="Voyages exclusifs et sur mesure en Inde. Découvrez le Rajasthan, Kerala, Gujarat avec authenticité et élégance.">
+  <meta name="description" content="Voyages exclusifs et sur mesure en Inde. Rajasthan, Kerala, Gujarat, Nord-Est avec authenticité et élégance.">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header luxe -->
+  <!-- Header -->
   <header>
     <div class="container">
       <div class="logo">□ Singh Voyage</div>
@@ -35,69 +35,110 @@
     </div>
   </header>
 
-  <!-- Hero luxe -->
+  <!-- Hero -->
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Découvrez l'Inde aux Mille Splendeurs</h1>
-      <p>Voyages de luxe sur mesure pour voyageurs d'exception</p>
-      <a href="#circuits" class="btn gold">Explorez Nos Expériences Privées</a>
-    </div>
-  </section>
-
-  <!-- Circuits vedette -->
-  <section id="circuits" class="section">
-    <div class="container">
-      <h2>Nos Circuits d'Exception</h2>
-      <div class="grid">
-        <!-- Exemple carte, duplique pour autres -->
-        <div class="card">
-          <img src="https://source.unsplash.com/random/400x300/?rajasthan,palace" alt="Rajasthan Luxe">
-          <h3>Fragment du Rajasthan</h3>
-          <p>8 jours / 7 nuits • À partir de 1435€</p>
-          <a href="fragment-du-rajasthan.html" class="btn small">Détails Exclusifs</a>
-        </div>
-        <!-- Ajoute d'autres cartes similaires pour Kerala, Gujarat, etc. -->
+      <h1>Découvrez l'Inde<br>aux Mille Splendeurs</h1>
+      <p class="slogan">Voyages de luxe sur mesure pour voyageurs d'exception</p>
+      <div class="hero-buttons">
+        <a href="#circuits" class="btn gold">Explorer Nos Expériences Privées</a>
+        <a href="#devis" class="btn outline">Devis Gratuit</a>
       </div>
     </div>
   </section>
 
-  <!-- Pourquoi nous (luxe) -->
+  <!-- Circuits en vedette -->
+  <section class="featured section">
+    <div class="container">
+      <h2>Circuits en Vedette</h2>
+      <p class="subtitle">Nos voyages coups de cœur pour une première découverte luxueuse de l'Inde</p>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1603262110263-fb6c1fd2c7cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="card-content">
+            <span class="tag">Coup de cœur</span>
+            <h3>Fragment du Rajasthan</h3>
+            <p class="meta">Rajasthan • 8 jours / 7 nuits</p>
+            <p>Un condensé magique : Delhi, Taj Mahal, Jaipur la ville rose, Udaipur la romantique.</p>
+            <p class="price">À partir de 1435€ / personne</p>
+            <a href="fragment-du-rajasthan.html" class="btn small gold">Découvrir →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1580130718646-9f694209b207?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="card-content">
+            <span class="tag">Coup de cœur</span>
+            <h3>Séjour Détente Kerala</h3>
+            <p class="meta">Kerala • 11 jours / 10 nuits</p>
+            <p>Backwaters en houseboat privé, plages de Varkala, plantations de thé et ayurvéda luxe.</p>
+            <p class="price">À partir de 1675€ / personne</p>
+            <a href="#" class="btn small gold">Découvrir →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi choisir -->
   <section id="apropos" class="section dark">
     <div class="container">
-      <h2>Pourquoi Choisir Singh Voyage ?</h2>
-      <div class="grid">
-        <div class="feature">Expériences Authentiques & Privées</div>
-        <div class="feature">Guides Experts Francophones</div>
-        <div class="feature">Personnalisation Haut de Gamme</div>
-        <div class="feature">Tourisme Responsable & Luxueux</div>
+      <h2>Pourquoi choisir Singh Voyage ?</h2>
+      <div class="grid-4">
+        <div class="feature">
+          <div class="icon">🌿</div>
+          <h3>Voyages Authentiques</h3>
+          <p>Itinéraires exclusifs loin des sentiers battus, pour une immersion vraie.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🧑‍🏫</div>
+          <h3>Guides Locaux Experts</h3>
+          <p>Francophones, passionnés, toujours aux petits soins.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔧</div>
+          <h3>100% Personnalisable</h3>
+          <p>Votre voyage sur mesure, adapté à vos envies et votre rythme.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">♻️</div>
+          <h3>Tourisme Responsable</h3>
+          <p>Respect des communautés et du patrimoine indien.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Témoignages TripAdvisor -->
+  <!-- Témoignages -->
   <section id="temoignages" class="section">
     <div class="container">
       <h2>Avis de Nos Voyageurs Privilégiés</h2>
       <div class="testimonials">
         <div class="testimonial">
-          <p>"Inoubliable ! Naresh nous a fait découvrir le Rajasthan authentique." - Melvin T, 5/5</p>
+          <p>"Inoubliable ! Naresh nous a fait découvrir le Rajasthan authentique avec un soin exceptionnel."</p>
+          <p class="author">– Melvin T, 5/5</p>
         </div>
-        <!-- Ajoute 2-3 autres -->
+        <div class="testimonial">
+          <p>"Naresh a été très attentif, passionnant et disponible. Un voyage sans souci et luxueux."</p>
+          <p class="author">– ELISABETH G, 5/5</p>
+        </div>
       </div>
-      <a href="https://www.tripadvisor.fr/ShowUserReviews-g297668-d26728398-r921195148-SINGH_VOYAGE-Jodhpur_Jodhpur_District_Rajasthan.html#REVIEWS" class="btn small">Voir Plus sur TripAdvisor</a>
+      <a href="https://www.tripadvisor.fr/ShowUserReviews-g297668-d26728398-r921195148-SINGH_VOYAGE-Jodhpur_Jodhpur_District_Rajasthan.html#REVIEWS" target="_blank" class="btn small outline">Voir plus sur TripAdvisor</a>
     </div>
   </section>
 
   <!-- Formulaire Devis -->
-  <section id="devis" class="section">
+  <section id="devis" class="section contact-section">
     <div class="container">
-      <h2>Demandez Votre Devis Personnalisé</h2>
-      <form action="https://formspree.io/f/yourformid" method="POST">
-        <input type="text" name="name" placeholder="Nom" required>
+      <h2>Créez Votre Voyage Sur-Mesure</h2>
+      <p>Partagez-nous vos envies, nous concevons votre itinéraire exclusif.</p>
+      <form action="https://formspree.io/f/votre-id-formspree" method="POST" class="form">
+        <input type="text" name="nom" placeholder="Nom complet" required>
         <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Détails de votre voyage"></textarea>
-        <button type="submit" class="btn gold">Envoyer</button>
+        <input type="tel" name="telephone" placeholder="Téléphone">
+        <textarea name="message" placeholder="Dites-nous tout : destinations, dates, nombre de personnes, budget..." rows="5" required></textarea>
+        <button type="submit" class="btn gold">Envoyer ma demande exclusive</button>
       </form>
     </div>
   </section>
@@ -105,7 +146,8 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2026 Singh Voyage - Voyages de Luxe en Inde</p>
+      <p>© 2026 Singh Voyage – Voyages d'exception en Inde</p>
+      <p>Contact : contact@singhvoyage.com</p>
     </div>
   </footer>
 
