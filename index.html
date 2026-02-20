@@ -3,82 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Singh Voyage - Voyages de Luxe en Inde</title>
-  <meta name="description" content="Voyages exclusifs et sur mesure en Inde. Rajasthan, Kerala, Gujarat, Nord-Est avec authenticité et élégance.">
+  <title>SINGH VOYAGE - Voyages d'exception en Inde</title>
+  <meta name="description" content="Découvrez l'Inde authentique avec Singh Voyage : circuits sur mesure au Rajasthan, Kerala, Gujarat, Nord-Est. Voyages personnalisés et responsables.">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Header comme screenshot 1 -->
   <header>
     <div class="container">
-      <div class="logo">□ Singh Voyage</div>
+      <div class="logo">□ SINGH VOYAGE</div>
       <nav>
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li class="dropdown">
-            <a href="#">Circuits</a>
-            <div class="dropdown-content">
-              <a href="#nord">Inde du Nord</a>
-              <a href="#ouest">Inde de l'Ouest</a>
-              <a href="#sud">Inde du Sud</a>
-              <a href="#nordest">Nord-Est</a>
-            </div>
-          </li>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#temoignages">Témoignages</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>Accueil</li>
+          <li>À propos</li>
+          <li>Blog</li>
+          <li>Contact</li>
         </ul>
       </nav>
-      <a href="#devis" class="btn gold">Devis Exclusif</a>
+      <button class="btn orange">Devis gratuit</button>
     </div>
   </header>
 
+  <!-- Hero comme screenshot 1 (image Rajasthan fort sunset) -->
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Découvrez l'Inde<br>aux Mille Splendeurs</h1>
-      <p class="slogan">Voyages de luxe sur mesure pour voyageurs d'exception</p>
+      <p class="small-title">VOYAGES D'EXCEPTION EN INDE</p>
+      <h1>Découvrez l'Inde aux mille couleurs</h1>
+      <p class="slogan">Voyages sur mesure et authentiques au cœur de l'Inde</p>
       <div class="hero-buttons">
-        <a href="#circuits" class="btn gold">Explorer Nos Expériences Privées</a>
-        <a href="#devis" class="btn outline">Devis Gratuit</a>
+        <button class="btn orange">Explorer nos circuits →</button>
+        <button class="btn white">Devis gratuit</button>
       </div>
     </div>
   </section>
 
-  <section class="featured section">
+  <!-- Circuits en vedette comme screenshot 2 -->
+  <section class="featured">
     <div class="container">
-      <h2>Circuits en Vedette</h2>
-      <p class="subtitle">Nos voyages coups de cœur pour une première découverte luxueuse de l'Inde</p>
+      <h2>Circuits en vedette</h2>
+      <p class="subtitle">Nos voyages coups de cœur pour une première découverte de l'Inde</p>
       <div class="grid-2">
         <div class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1603262110263-fb6c1fd2c7cd?ixlib=rb-4.0.3&fit=crop&w=800&q=80&auto=format');"></div>
-          <div class="card-content">
-            <span class="tag">Coup de cœur</span>
-            <h3>Fragment du Rajasthan</h3>
-            <p class="meta">Rajasthan • 8 jours / 7 nuits</p>
-            <p>Un condensé magique : Delhi, Taj Mahal, Jaipur la ville rose, Udaipur la romantique.</p>
-            <p class="price">À partir de 1435€ / personne</p>
-            <a href="fragment-du-rajasthan.html" class="btn small gold">Découvrir →</a>
-          </div>
+          <span class="tag orange">Coup de cœur</span>
+          <div class="card-img" style="background-image: url('https://thumbs.dreamstime.com/b/breathtaking-panoramic-view-jodhpurs-blue-city-mehrangarh-fort-rajasthan-jewel-experience-magic-jodhpur-vantage-381245529.jpg');"></div>
+          <h3>FRAGMENT DU RAJASTHAN</h3>
+          <p class="meta">Rajasthan</p>
+          <p class="duration">8 jours / 7 nuits</p>
+          <p>Un condensé magique du Rajasthan : Delhi, Agra, le Taj Mahal, Jaipur la ville rose et Udaipur la romantique. L'essentiel de l'Inde du Nord en 8 jours.</p>
+          <p class="price">À partir de 1435€/par personne</p>
+          <button class="btn small">Découvrir</button>
         </div>
 
-        <div class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1512343879784-a960ae9a0e3a?ixlib=rb-4.0.3&fit=crop&w=800&q=80&auto=format');"></div>
-          <div class="card-content">
-            <span class="tag">Coup de cœur</span>
-            <h3>Séjour Détente Kerala</h3>
-            <p class="meta">Kerala • 11 jours / 10 nuits</p>
-            <p>Backwaters en houseboat privé, plages de Varkala, plantations de thé et ayurvéda luxe.</p>
-            <p class="price">À partir de 1675€ / personne</p>
-            <a href="#" class="btn small gold">Découvrir →</a>
-          </div>
+        <div class="card gradient">
+          <span class="tag orange">Coup de cœur</span>
+          <div class="card-img" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/62/d2/21/caption.jpg?w=1200&h=-1&s=1');"></div>
+          <h3>SÉJOUR DÉTENTE KERALA</h3>
+          <p class="meta">Kerala</p>
+          <p class="duration">11 jours / 10 nuits</p>
+          <p>Détente et sérénité au Kerala : backwaters en houseboat, plages paradisiaques de Varkala, plantations de thé de Munnar et massage ayurvédique.</p>
+          <p class="price">À partir de 1675€/par personne</p>
+          <button class="btn small white">Découvrir</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Le reste (Pourquoi choisir, Témoignages, Formulaire, Footer) reste identique à ma version précédente – copie-colle depuis mon dernier message si besoin -->
+  <!-- Explorez l'Inde par régions comme screenshot 3 -->
+  <section class="regions section">
+    <div class="container">
+      <h2>Explorez l'Inde par régions</h2>
+      <p class="subtitle">Du Rajasthan des maharajas aux plages du Kerala, chaque région révèle ses trésors</p>
+      <div class="grid-4">
+        <div class="region-card">
+          <div class="card-img" style="background-image: url('https://thumbs.dreamstime.com/b/breathtaking-panoramic-view-jodhpurs-blue-city-mehrangarh-fort-rajasthan-jewel-experience-magic-jodhpur-vantage-381245529.jpg');"></div>
+          <h3>Inde du Nord</h3>
+          <p>Rajasthan des maharajas, Taj Mahal et Himalaya</p>
+        </div>
+        <div class="region-card">
+          <div class="card-img" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/62/d2/21/caption.jpg?w=1200&h=-1&s=1');"></div>
+          <h3>Inde du Sud</h3>
+          <p>Temples dravidiens, backwaters et plages du Kerala</p>
+        </div>
+        <div class="region-card">
+          <div class="card-img" style="background-image: url('https://magikindia.com/wp-content/uploads/2023/02/meghwal-kutch-1-1024x683.jpg');"></div>
+          <h3>Inde de l'Ouest</h3>
+          <p>Gujarat ethnique et déserts du Kutch</p>
+        </div>
+        <div class="region-card">
+          <div class="card-img" style="background-image: url('https://cdn.kimkim.com/files/a/content_articles/featured_photos/2a131761ce1eae538a91d5c35a2f1cc438395c17/big-fc72d2ecc9501e7ee3b60bab38177ed7.jpg');"></div>
+          <h3>Nord-Est</h3>
+          <p>Darjeeling, Sikkim et montagnes mystiques</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tous nos circuits par région comme screenshot 4 -->
+  <section class="all-circuits section">
+    <div class="container">
+      <h2>Tous nos circuits par région</h2>
+      <div class="region-group">
+        <h3 class="region-title orange">• Inde du Nord</h3>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-img" style="background-image: url('https://thumbs.dreamstime.com/b/breathtaking-panoramic-view-jodhpurs-blue-city-mehrangarh-fort-rajasthan-jewel-experience-magic-jodhpur-vantage-381245529.jpg');"></div>
+            <h3>Fragment du Rajasthan</h3>
+            <p class="meta">8j/7n</p>
+            <p>Un condensé magique du Rajasthan : Delhi, Agra, le Taj Mahal, Jaipur la ville rose et Udaipur la romantique...</p>
+            <p class="price">À partir de 1435€</p>
+            <button class="btn small">Découvrir →</button>
+          </div>
+          <!-- Duplique pour autres circuits du Nord : Couleurs du Nord, Désert Intimiste, etc. – ajoute-les un par un si besoin -->
+        </div>
+      </div>
+      <!-- Répète pour Ouest, Sud, Nord-Est avec leurs cards et images -->
+    </div>
+  </section>
+
+  <!-- Pourquoi choisir comme screenshot 5 -->
+  <section class="why-us dark-section">
+    <div class="container">
+      <p class="small-title">NOS ENGAGEMENTS</p>
+      <h2>Pourquoi choisir Singh Voyage ?</h2>
+      <div class="grid-4">
+        <div class="feature-card">
+          <div class="icon orange-bg">○</div>
+          <h3>Voyages Authentiques</h3>
+          <p>Des itinéraires soigneusement conçus pour vous faire découvrir l'Inde véritable, loin des sentiers battus.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon orange-bg">👤</div>
+          <h3>Guides Locaux Experts</h3>
+          <p>Nos guides francophones natifs partagent avec passion leur culture et leurs connaissances.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon orange-bg">%</div>
+          <h3>100% Personnalisable</h3>
+          <p>Chaque circuit est adapté à vos envies, votre rythme et votre budget.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon orange-bg">❤️</div>
+          <h3>Tourisme Responsable</h3>
+          <p>Nous valorisons les communautés locales et préservons le patrimoine culturel et naturel indien.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA comme screenshot 6 -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <p class="small-title">VOTRE VOYAGE COMMENCE ICI</p>
+      <h2>Créez votre voyage sur-mesure en Inde</p>
+      <p>Partagez-nous vos envies et nous concevrons pour vous un itinéraire unique, parfaitement adapté à vos rêves de voyage.</p>
+      <button class="btn orange">Demander un devis gratuit →</button>
+    </div>
+  </section>
+
+  <!-- Footer comme screenshot 6 -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">S SINGH VOYAGE</div>
+        <div class="footer-links">
+          <h4>Nos Circuits</h4>
+          <ul>
+            <li>Inde du Nord</li>
+            <li>Inde de l'Ouest</li>
+            <li>Inde du Sud</li>
+            <li>Nord-Est de l'Inde</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Liens Utiles</h4>
+          <ul>
+            <li>À propos</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>Demander un devis</li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📍 Jodhpur, Rajasthan, Inde</p>
+          <p>✉️ contact@singhvoyage.com</p>
+          <p>📞 +91 876 971 7983</p>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Singh Voyage</p>
+    </div>
+  </footer>
 
 </body>
 </html>
