@@ -1,0 +1,21 @@
+body { font-family: 'Open Sans', sans-serif; margin: 0; color: #333; }
+.container { max-width: 1200px; margin: auto; padding: 0 20px; }
+header { background: #1E3A8A; color: white; padding: 20px; position: fixed; width: 100%; }
+.logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #D4AF37; }
+nav ul { list-style: none; display: flex; }
+nav li { margin: 0 15px; }
+nav a { color: white; text-decoration: none; }
+.dropdown-content { display: none; position: absolute; background: #1E3A8A; }
+.dropdown:hover .dropdown-content { display: block; }
+.btn { background: #D4AF37; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; }
+.hero { height: 100vh; background: url('https://source.unsplash.com/random/1920x1080/?india,luxury,palace') center/cover; position: relative; }
+.hero-overlay { background: rgba(0,0,0,0.4); position: absolute; inset: 0; }
+.hero-content { position: relative; text-align: center; top: 40%; color: white; }
+h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: #D4AF37; }
+.section { padding: 80px 0; }
+.dark { background: #0f172a; color: white; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.card:hover { transform: translateY(-10px); }
+.testimonial { background: #f9f9f9; padding: 20px; border-radius: 10px; }
+footer { background: #1E3A8A; color: white; text-align: center; padding: 20px; }
