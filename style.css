@@ -63,12 +63,13 @@ nav li {
 }
 
 .hero {
-  height: 100vh;
-  background-image: url('https://pixabay.com/fr/photos/chittorgarh-rajasthan-fort-tourisme-7860987/');
-  background-size: cover;
-  background-position: center;
+  height: 100vh;                    /* plein écran vertical */
+  min-height: 800px;                /* évite qu'il soit trop petit sur grands écrans */
+  background-image: url('https://cdn.pixabay.com/photo/2023/03/21/12/53/chittorgarh-7860987_1920.jpg');  /* 1920px version – change à 3840 si besoin */
+  background-size: cover;           /* couvre tout l'écran sans déformation */
+  background-position: center;      /* centre la vue sur le fort */
   background-repeat: no-repeat;
-  background-attachment: fixed; /* effet luxe immersif */
+  background-attachment: fixed;     /* effet parallax luxe quand on scroll */
   position: relative;
   display: flex;
   align-items: center;
