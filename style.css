@@ -20,8 +20,12 @@ header .container {
 }
 
 .logo-img {
-  height: 60px;
-  width: auto;
+  height: auto;                     /* préserve le ratio naturel */
+  max-height: 70px;                 /* hauteur max pour ne pas déborder – ajuste à 60px ou 80px selon tes tests */
+  width: auto;                      /* largeur auto pour garder proportions */
+  display: block;                   /* évite marges indésirables */
+  object-fit: contain;              /* empêche toute coupe ou étirement */
+  flex-shrink: 0;                   /* évite que flexbox rétrécisse le logo */
 }
 
 nav ul {
