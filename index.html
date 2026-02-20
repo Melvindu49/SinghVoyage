@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singh Voyage - Voyages de Luxe en Inde</title>
+  <meta name="description" content="Voyages exclusifs et sur mesure en Inde. Découvrez le Rajasthan, Kerala, Gujarat avec authenticité et élégance.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header luxe -->
+  <header>
+    <div class="container">
+      <div class="logo">□ Singh Voyage</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="dropdown">
+            <a href="#">Circuits</a>
+            <div class="dropdown-content">
+              <a href="#nord">Inde du Nord</a>
+              <a href="#ouest">Inde de l'Ouest</a>
+              <a href="#sud">Inde du Sud</a>
+              <a href="#nordest">Nord-Est</a>
+            </div>
+          </li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#devis" class="btn gold">Devis Exclusif</a>
+    </div>
+  </header>
+
+  <!-- Hero luxe -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Découvrez l'Inde aux Mille Splendeurs</h1>
+      <p>Voyages de luxe sur mesure pour voyageurs d'exception</p>
+      <a href="#circuits" class="btn gold">Explorez Nos Expériences Privées</a>
+    </div>
+  </section>
+
+  <!-- Circuits vedette -->
+  <section id="circuits" class="section">
+    <div class="container">
+      <h2>Nos Circuits d'Exception</h2>
+      <div class="grid">
+        <!-- Exemple carte, duplique pour autres -->
+        <div class="card">
+          <img src="https://source.unsplash.com/random/400x300/?rajasthan,palace" alt="Rajasthan Luxe">
+          <h3>Fragment du Rajasthan</h3>
+          <p>8 jours / 7 nuits • À partir de 1435€</p>
+          <a href="fragment-du-rajasthan.html" class="btn small">Détails Exclusifs</a>
+        </div>
+        <!-- Ajoute d'autres cartes similaires pour Kerala, Gujarat, etc. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi nous (luxe) -->
+  <section id="apropos" class="section dark">
+    <div class="container">
+      <h2>Pourquoi Choisir Singh Voyage ?</h2>
+      <div class="grid">
+        <div class="feature">Expériences Authentiques & Privées</div>
+        <div class="feature">Guides Experts Francophones</div>
+        <div class="feature">Personnalisation Haut de Gamme</div>
+        <div class="feature">Tourisme Responsable & Luxueux</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages TripAdvisor -->
+  <section id="temoignages" class="section">
+    <div class="container">
+      <h2>Avis de Nos Voyageurs Privilégiés</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"Inoubliable ! Naresh nous a fait découvrir le Rajasthan authentique." - Melvin T, 5/5</p>
+        </div>
+        <!-- Ajoute 2-3 autres -->
+      </div>
+      <a href="https://www.tripadvisor.fr/ShowUserReviews-g297668-d26728398-r921195148-SINGH_VOYAGE-Jodhpur_Jodhpur_District_Rajasthan.html#REVIEWS" class="btn small">Voir Plus sur TripAdvisor</a>
+    </div>
+  </section>
+
+  <!-- Formulaire Devis -->
+  <section id="devis" class="section">
+    <div class="container">
+      <h2>Demandez Votre Devis Personnalisé</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Détails de votre voyage"></textarea>
+        <button type="submit" class="btn gold">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Singh Voyage - Voyages de Luxe en Inde</p>
+    </div>
+  </footer>
+
+</body>
+</html>
