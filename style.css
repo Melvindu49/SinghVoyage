@@ -5,7 +5,7 @@ body { font-family: 'Open Sans', sans-serif; color: #333; line-height: 1.6; back
 
 header {
   background: #001f3f;
-  padding: 25px 0;
+  padding: 30px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -20,12 +20,11 @@ header .container {
 }
 
 .logo-img {
-  height: auto;                     /* préserve le ratio naturel */
-  max-height: 70px;                 /* hauteur max pour ne pas déborder – ajuste à 60px ou 80px selon tes tests */
-  width: auto;                      /* largeur auto pour garder proportions */
-  display: block;                   /* évite marges indésirables */
-  object-fit: contain;              /* empêche toute coupe ou étirement */
-  flex-shrink: 0;                   /* évite que flexbox rétrécisse le logo */
+  height: auto;
+  max-height: 70px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 nav ul {
@@ -34,25 +33,24 @@ nav ul {
 }
 
 nav li {
-  margin-left: 35px;
+  margin-left: 40px;
   font-weight: 500;
   color: white;
   cursor: pointer;
 }
 
 .btn {
-  padding: 14px 32px;
+  padding: 14px 36px;
   border-radius: 50px;
   font-weight: 600;
-  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 
 .btn.orange {
   background: #FF6600;
   color: white;
-  border: none;
 }
 
 .btn.orange:hover {
@@ -62,18 +60,18 @@ nav li {
 }
 
 .btn.large {
-  padding: 18px 48px;
+  padding: 18px 50px;
   font-size: 1.2rem;
 }
 
 .hero {
-  height: 100vh;                    /* plein écran vertical */
-  min-height: 800px;                /* évite qu'il soit trop petit sur grands écrans */
-  background-image: url('https://cdn.pixabay.com/photo/2023/03/21/12/53/chittorgarh-7860987_1920.jpg');  /* 1920px version – change à 3840 si besoin */
-  background-size: cover;           /* couvre tout l'écran sans déformation */
-  background-position: center;      /* centre la vue sur le fort */
+  height: 100vh;
+  min-height: 800px;
+  background-image: url('https://cdn.pixabay.com/photo/2023/03/21/12/53/chittorgarh-7860987_1920.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;     /* effet parallax luxe quand on scroll */
+  background-attachment: fixed;
   position: relative;
   display: flex;
   align-items: center;
@@ -172,7 +170,7 @@ h1 {
 
 .regions h2 { font-family: 'Playfair Display', serif; text-align: center; font-size: 3.5rem; color: #001f3f; margin-bottom: 20px; }
 
-.clean .region-card {
+.grid-4.clean .region-card {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
@@ -180,10 +178,59 @@ h1 {
   text-align: center;
 }
 
-.clean .region-card:hover { transform: scale(1.04); }
+.grid-4.clean .region-card:hover { transform: scale(1.04); }
 
-.clean .card-img { height: 260px; }
+.grid-4.clean .card-img { height: 260px; }
 
-.clean h3 { padding: 20px; background: rgba(0,31,63,0.85); color: white; margin: 0; font-family: 'Playfair Display', serif; }
+.grid-4.clean h3 { padding: 20px; background: rgba(0,31,63,0.85); color: white; margin: 0; font-family: 'Playfair Display', serif; }
 
-/* Le reste (why-us, footer, etc.) reste identique à la version précédente */
+.dark-section { background: #001a33; color: white; padding: 100px 0; }
+
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; }
+
+.feature-card { background: rgba(255,255,255,0.1); border-radius: 16px; padding: 40px 25px; text-align: center; }
+
+.icon { font-size: 3rem; margin-bottom: 20px; color: #FF6600; }
+
+.cta-section {
+  background-image: url('https://cdn.pixabay.com/photo/2023/03/21/12/53/chittorgarh-7860987_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 140px 0;
+  text-align: center;
+  color: white;
+}
+
+.cta-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.65); }
+
+.cta-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+
+footer {
+  background: #001a33;
+  color: white;
+  padding: 80px 0 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 15px; }
+
+.footer-links h4 { color: #FF6600; margin-bottom: 20px; font-size: 1.2rem; }
+
+.footer-links ul { list-style: none; }
+
+.footer-links li { margin-bottom: 12px; }
+
+.copyright { text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; font-size: 0.95rem; }
+
+@media (max-width: 768px) {
+  h1 { font-size: 3.5rem; }
+  .logo-img { max-height: 55px; }
+  .grid-2, .grid-4 { grid-template-columns: 1fr; }
+}
